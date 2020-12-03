@@ -18,10 +18,7 @@ public class AggregatorTest {
         agr.addValue(val);
         assertThat(agr.getSum()).isEqualTo(val);
     }
-    @Test
-    public void testExistClass() {
-        assertThat( Class.forName( "Aggregator" )).isEqualTo(true);
-    }
+   
     public void testExistObject() {
         Aggregator agr = new Aggregator();
         assertThat( agr == null).isEqualTo(false);
